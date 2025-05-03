@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrecisionAg for Smallholders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Empowering Smallholders with PrecisionAg</h2>
+        <p>Unlock the potential of your farm with our subscription-based precision agriculture services. We leverage cutting-edge technology to provide you with actionable insights and recommendations tailored for your smallholding.</p>
+
+        <section>
+            <h3>Explore Our Services</h3>
+            <button id="droneButton">See Drone Mapping in Action</button>
+            <p id="droneMessage" style="font-style: italic; color: #777;"></p>
+
+            <div class="service-gallery">
+                <div class="service-item"><img src="fieldmapping.jpeg" alt="Field Mapping"><p>Field Mapping</p></div>
+                <div class="service-item"><img src="soil analysis.jpeg" alt="Soil Analysis"><p>Soil Analysis</p></div>
+                <div class="service-item"><img src="greenhouse.jpg" alt="Recommendations"><p>Targeted Recommendations</p></div>
+                <div class="service-item"><img src="soil.jpeg" alt="Recommendations"><p>Targeted Recommendations</p></div>
+            </div>
+            <p id="galleryMessage"></p>
+        </section>
+
+        <section class="feature-tabs">
+            <h3>Key Features</h3>
+            <div class="feature-buttons">
+                <button class="feature-button active" data-tab="feature1">Drone Insights</button>
+                <button class="feature-button" data-tab="feature2">Data-Driven Decisions</button>
+                <button class="feature-button" data-tab="feature3">Small Farm Focus</button>
+            </div>
+            <div id="feature1" class="feature-content active">
+                <p>Our drone-based field mapping provides high-resolution imagery of your farm, enabling you to identify variations in crop health, water stress, and potential problem areas with unprecedented accuracy.</p>
+            </div>
+            <div id="feature2" class="feature-content">
+                <p>Leverage the power of data analytics. We process soil analysis results and field data to provide you with precise recommendations for fertilizer and pesticide application, optimizing resource use and reducing costs.</p>
+            </div>
+            <div id="feature3" class="feature-content">
+                <p>Our services are specifically designed for the unique needs and scale of smallholder farms. We understand the challenges you face and provide solutions that are both effective and affordable.</p>
+            </div>
+        </section>
+
+        <section class="subscription-form">
+            <h3>Subscribe for Early Access!</h3>
+            <form id="subscriptionForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name">
+                    <div class="invalid-feedback" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email">
+                    <div class="invalid-feedback" id="emailError"></div>
+                    <div class="valid-feedback" id="emailValid">Looks good!</div>
+                </div>
+                <button type="submit" id="subscribeButton">Join Our Waitlist</button>
+                <p id="subscriptionMessage" style="font-style: italic; color: green; margin-top: 10px;"></p>
+            </form>
+        </section>
+
+        <div class="animated-leaf"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
